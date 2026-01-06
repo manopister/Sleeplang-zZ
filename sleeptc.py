@@ -51,7 +51,7 @@ def execute_brainfuck(code, show_bf=False):
                 while depth > 0:
                     ip += 1
                     if ip >= len(code):
-                        raise SyntaxError("Loop não foi fechado.")
+                        raise SyntaxError("The loop needs to have a closure.")
                     if code[ip] == '[':
                         depth += 1
                     elif code[ip] == ']':
@@ -71,8 +71,8 @@ def execute_brainfuck(code, show_bf=False):
 def main():
     if len(sys.argv) != 3:
         print("--SleepLanguage--")
-        print("| exec/e - execute | exec/d - simple debug | exec/t - only transpile |")
-        print("\nUso: sleeptc.py <comando> <codigo|arquivo.slee>")
+        print("| exec/e - execute | exec/d - simple debug | exec/t - only BrainF###k code |")
+        print("\nUse: More about in the README file.")
         return
     
     command = sys.argv[1]
@@ -87,13 +87,13 @@ def main():
     bf_code = sleeplang_to_brainfuck(sleeplang_code)
     
     if command == 'exec/t':
-        print("\n[Transpilação]:")
+        print("\n[T Mode]:")
         print(bf_code)
     
     elif command == 'exec/d':
-        print("\n[Debug - Brainfuck]:")
+        print("\n[Debug - D Mode BrainF###K]:")
         print(bf_code)
-        print("\n[Execução]:")
+        print("\n[Execution]:")
         result = execute_brainfuck(bf_code, show_bf=False)
         print(result)
     
@@ -102,7 +102,7 @@ def main():
         print(result)
     
     else:
-        print("Comando inválido. Use: exec/e, exec/d ou exec/t")
+        print("Invalid command.")
 
 if __name__ == "__main__":
     main()
