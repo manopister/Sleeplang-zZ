@@ -4,13 +4,16 @@ Uma linguagem de programação minimalista baseada em BrainF###k.
 Modo de uso:
 No terminal do sistema, use essa seguinte combinação de comandos (se o python estiver instalado):
 python sleeptc.py <comando> <código entre aspas ou arquivo .slee>
+
 Detalhe:
 Os comandos disponíveis são:
 exec/e - apenas executa o código
 exec/d - executa e mostra o código em BrainF###k
 exec/t - apenas mostra o código em BrainF###k
+
 Arquivos .slee:
 Se o sleeptc.py estiver instalado, em um editor de texto, você poderá criar um arquivo .slee e usar ele em vez de um código entre aspas. Como exemplo, eu disponibizei um arquivo chamado "helloworld.slee", nele contém um exemplo de código Sleeplang-zZ.
+
 Comandos:
 ZZZ: Incrementa.
 zzz: Decrementa.
