@@ -7,9 +7,12 @@ python sleeptc.py <comando> <código entre aspas ou arquivo .slee>
 
 Detalhe:
 Os comandos disponíveis são:
-exec/e - apenas executa o código
-exec/d - executa e mostra o código em BrainF###k
-exec/t - apenas mostra o código em BrainF###k
+
+exec/e - Apenas executa o código.
+
+exec/d - Executa e mostra o código em BrainF###k.
+
+exec/t - Apenas mostra o código em BrainF###k.
 
 Arquivos .slee:
 Se o sleeptc.py estiver instalado, em um editor de texto, você poderá criar um arquivo .slee e usar ele em vez de um código entre aspas. Como exemplo, eu disponibizei um arquivo chamado "helloworld.slee", nele contém um exemplo de código Sleeplang-zZ.
